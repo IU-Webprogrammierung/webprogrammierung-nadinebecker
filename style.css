@@ -8,3 +8,27 @@ header {
   width: 150px;
   height: auto;
 }
+
+/* Desktop*/
+.main-content {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.left-bar {
+  background-color: #49856E;
+  width: 80px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.right-bar {
+  background-color: #49856E;
+  width: 80px;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
