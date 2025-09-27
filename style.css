@@ -11,8 +11,11 @@ header {
 
 /* Desktop*/
 .main-content {
-  margin-left: 100px;
-  margin-right: 100px;
+   background-color: #f6f3f3;
+  text-align: center;
+  margin-left: 80px;
+  margin-right: 80px;
+  
 }
 
 .left-bar {
@@ -31,4 +34,10 @@ header {
   position: fixed;
   right: 0;
   top: 0;
+}
+
+footer {
+  background-color: #f6f3f3;
+  padding: 20px;
+  text-align: center;
 }
