@@ -13,6 +13,33 @@ header {
   height: auto;
 }
 
+h1 {
+  color: #4A4A4A
+}
+
+.main-navi ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  padding: 1rem 0;
+  margin: 0;
+  background-color: #f6f3f3;
+}
+
+.main-navi a {
+  text-decoration: none;
+  color: #4A4A4A;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.main-navi a.active {
+  color: #49856E;
+  border-bottom: 2px solid #49856E;
+}
+
 /* Desktop*/
 .main-content {
   text-align: center;
