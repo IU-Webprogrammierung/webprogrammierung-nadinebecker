@@ -41,9 +41,10 @@ h1 {
 }
 
 .main-navi a.active {
-  color: #49856E;
+  color: #f6f3f3;
   border-bottom: 2px solid #49856E;
   border-color: #49856E;
+  background-color: #49856E;;
 }
 
 /* Desktop*/
