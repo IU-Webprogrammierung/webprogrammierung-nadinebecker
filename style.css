@@ -61,15 +61,38 @@ h1 {
 }
 
 .hoch{
-width: 250px; 
-height: 400px;
+  width: 250px; 
+  height: 400px;
 
 }
 
 .quer{
-width: 400px; 
-height: 250px;
+  width: 400px; 
+  height: 250px;
 }
+
+.text-image-block {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  align-items: center;
+  gap: 2rem;
+  max-width: 1000px; 
+  margin: 0 auto; 
+  padding: 2rem;
+ 
+}
+
+.text-image-block.reverse {
+  flex-direction: row-reverse; 
+}
+
+.text-image-block .text {
+  flex: 1;
+  max-width: 500px;
+}
+
+
 
 .left-bar {
   background-color: #49856E;
