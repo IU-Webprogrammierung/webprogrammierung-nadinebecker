@@ -55,6 +55,22 @@ h1 {
   
 }
 
+.quadrat {
+  width: 200px; 
+  height: 200px; 
+}
+
+.hoch{
+width: 250px; 
+height: 400px;
+
+}
+
+.quer{
+width: 400px; 
+height: 250px;
+}
+
 .left-bar {
   background-color: #49856E;
   width: 80px;
