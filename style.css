@@ -56,25 +56,26 @@ h1 {
 }
 
 .quadrat {
-  width: 200px; 
-  height: 200px; 
+  aspect-ratio: 2/2; 
+    height: 250px;
+  width: auto;
 }
 
 .hoch{
-  width: 250px; 
-  height: 400px;
-
+ aspect-ratio: 2/3; 
+  height: 250px;
+  width: auto;
 }
 
 .quer{
-  width: 400px; 
-  height: 250px;
+ aspect-ratio:4/2; 
 }
+
+  
 
 .text-image-block {
   display: flex;
-  flex-wrap: wrap; 
-  justify-content: center; 
+  flex-direction: row;
   align-items: center;
   gap: 2rem;
   max-width: 1000px; 
@@ -89,9 +90,17 @@ h1 {
 
 .text-image-block .text {
   flex: 1;
+  min-width: 300px;
   max-width: 500px;
 }
 
+.text-image-block img {
+  flex: 1;
+   object-fit: cover;
+  border-radius: 8px;
+  height: auto;
+  max-width: 25%;
+}
 
 
 .left-bar {
