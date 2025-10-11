@@ -17,6 +17,10 @@ h1 {
   color: #4A4A4A
 }
 
+h2{
+  color: #49856E;
+}
+
 .main-navi ul {
   display: flex;
   justify-content: center;
@@ -68,7 +72,9 @@ h1 {
 }
 
 .quer{
- aspect-ratio:4/2; 
+ aspect-ratio:3/2; 
+ height: auto;
+  width: 250px;
 }
 
   
