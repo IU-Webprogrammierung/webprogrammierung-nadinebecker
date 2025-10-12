@@ -1,9 +1,9 @@
 body {
   background-color: #f6f3f3;
+  font-family: Tahoma, Verdana;
 }
 
 header {
-  background-color: #f6f3f3;
   padding: 20px;
   text-align: center;
 }
@@ -14,25 +14,25 @@ header {
 }
 
 h1 {
-  color: #4A4A4A
+  color: #4A4A4A;
+  font-family: 'Segoe UI', Tahoma, Verdana;
 }
 
 h2{
   color: #49856E;
 }
 
-.main-navi ul {
+.navi ul {
   display: flex;
   justify-content: center;
   gap: 2rem;
   list-style: none;
   padding: 1rem 0;
   margin: 0;
-  background-color: #f6f3f3;
   border-bottom: 2px solid #2E2E2E;
 }
 
-.main-navi a {
+.navi a {
   text-decoration: none;
   color: #4A4A4A;
   font-weight: 500;
@@ -40,11 +40,10 @@ h2{
   padding: 0.5rem 1rem;
   border: 2px solid #4A4A4A;
   border-radius: 6px;
-  background-color: #f6f3f3;
   transition: color 0.3s ease;
 }
 
-.main-navi a.active {
+.navi a.active {
   color: #f6f3f3;
   border-bottom: 2px solid #49856E;
   border-color: #49856E;
@@ -128,7 +127,6 @@ h2{
 }
 
 footer {
-  background-color: #f6f3f3;
   padding: 20px;
   text-align: center;
 }
