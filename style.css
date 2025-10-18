@@ -23,9 +23,14 @@ h2{
 }
 
 
+footer {
+  padding: 20px;
+  text-align: center;
+}
+
 /* Desktop*/
 
-
+@media (min-width: 1025px) {
 .navi ul {
   display: flex;
   justify-content: center;
@@ -129,11 +134,7 @@ h2{
   top: 0;
 }
 
-footer {
-  padding: 20px;
-  text-align: center;
 }
-
 
 /* Mobile*/
 @media (max-width: 768px) {
@@ -175,23 +176,55 @@ footer {
     font-weight: bold;
   }
 
+.main-content {
+  text-align: center;
+ 
+}
+  .quadrat {
+  aspect-ratio: 2/2; 
+    height: 250px;
+  width: auto;
+}
+
+.hoch{
+ aspect-ratio: 2/3; 
+  height: 250px;
+  width: auto;
+}
+
+.quer{
+ aspect-ratio:3/2; 
+ height: auto;
+  width: 250px;
+}
+
+  
+
   .text-image-block {
-    padding: 0;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  text-align: center; 
+  padding: 1rem;
+}
 
-  .text-image-block .text p {
-   max-width: 90%;
-    padding: 0 1rem;
-       font-size: 1rem;
-    line-height: 1.4;
-  }
+.text-image-block .text p {
+  max-width: 80%;
+  padding: 0 1rem;
+  font-size: 1rem;
+  line-height: 1.4;
+}
 
-  .text-image-block img {
-    max-width: 50%;
-    height: auto;
-  }
+.text-image-block img {
+  max-width: 50%;
+  height: auto;
+  max-height: 250px;
+  margin-bottom: 1rem;
+}
 
     .left-bar {
+    background-color: #49856E;
     transition: all 0.1s ease;
     position: relative;
     width: 100%;
@@ -202,6 +235,7 @@ footer {
   }
 
   .right-bar {
+    background-color: #49856E;
     transition: all 0.1s ease;
     position: relative;
     width: 100%;
@@ -219,4 +253,63 @@ footer {
 }
 
 
+}
+
+
+/* Tablet*/
+@media (min-width: 768px) and (max-width: 1200px) {
+
+ .navi ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 0.3rem 0.8rem;  
+  margin: 0;
+  border-bottom: 2px solid #2E2E2E;
+}
+
+.navi a {
+  text-decoration: none;
+  color: #4A4A4A;
+  font-weight: 500;
+  font-size:  0.9rem;   
+  padding:  0.3rem 0.8rem;  
+  border: 1px solid #4A4A4A;
+  border-radius: 4px;
+  transition: color 0.3s ease;
+}
+
+.navi a.active {
+  color: #f6f3f3;
+  border-bottom: 2px solid #49856E;
+  border-color: #49856E;
+  background-color: #49856E;;
+}
+
+.main-content {
+  text-align: center;
+}
+
+.quadrat {
+  aspect-ratio: 2/2; 
+    height: 250px;
+  width: auto;
+}
+
+.hoch{
+ aspect-ratio: 2/3; 
+  height: 250px;
+  width: auto;
+}
+
+.quer{
+ aspect-ratio:3/2; 
+ height: auto;
+  width: 250px;
+}
+
+  .left-bar,
+  .right-bar {
+    display: none;
+  }
 }
