@@ -28,6 +28,13 @@ footer {
   text-align: center;
 }
 
+a:focus,
+button:focus,
+input:focus {
+  outline: 2px solid #49856E; 
+  outline-offset: 2px;
+}
+
 /* Desktop*/
 
 @media (min-width: 1025px) {
@@ -168,9 +175,17 @@ footer a {
     border-bottom: 0px solid #2E2E2E;
   }
 
-  .navi:hover ul {
-    opacity: 1;
-  }
+ .navi:hover,
+.navi:focus-within {
+  width: 200px;
+  height: auto;
+  padding: 1rem;
+}
+
+.navi:hover ul,
+.navi:focus-within ul {
+  opacity: 1;
+}
 
   .navi li {
     margin: 0.5rem 0;
