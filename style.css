@@ -37,12 +37,12 @@ input:focus {
 .calendar {
   width: 100%;
   border-collapse: collapse;
-  background-color: #4A4A4A;
-  color: #f6f3f3;
+  background-color: #f6f3f3;
+  color:  #4A4A4A;
   border: 2px solid #49856E;
-  border-radius: 8px;
+  border-radius: 5px;
   padding: 1rem;
-  max-width: 400px;
+  max-width: 280px;
   margin: auto;
 }
 
@@ -55,9 +55,19 @@ input:focus {
 }
 
 .calendar th {
-  background-color: #2E2E2E;
+  background-color:#6E6E6E;
+  color: #FFD700;
   font-weight: bold;
 }
+
+.booked {
+  background-color: #FFD700;
+  color: #6E6E6E;
+  font-weight: bold;
+  box-shadow: 0 0 0 2px #4A4A4A;
+  border-radius: 2px;
+}
+
 /* Desktop*/
 
 @media (min-width: 1025px) {
