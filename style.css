@@ -34,7 +34,30 @@ input:focus {
   outline: 2px solid #49856E; 
   outline-offset: 2px;
 }
+.calendar {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #4A4A4A;
+  color: #f6f3f3;
+  border: 2px solid #49856E;
+  border-radius: 8px;
+  padding: 1rem;
+  max-width: 400px;
+  margin: auto;
+}
 
+.calendar th,
+.calendar td {
+  border: 1px solid #49856E;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.calendar th {
+  background-color: #2E2E2E;
+  font-weight: bold;
+}
 /* Desktop*/
 
 @media (min-width: 1025px) {
@@ -254,10 +277,10 @@ footer a {
     top: auto;
     margin-top: -2px;
   }
-
-  .right-bar {
+.right-bar {
   display: none;
   }
+
 footer {
   background-color: #49856E;
   color: #f6f3f3;
