@@ -1,46 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script> $( document ).ready(function() {$("header").load ("components/header.html");});</script>
-
-   
-    <title>NB Fotografie - Home</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+  <script> $(document).ready(function () { $("header").load("components/header.html"); });</script>
+  <title>NB Fotografie - Home</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  
-    <header>
-    </header>
-    <script> $(document).ready(function () {$("header").load("components/header.html", function () {$.getScript("components/navigation.js");});});
-    </script>
-    <aside class="left-bar"></aside>
-    <main class="main-content">
+
+  <header>
+  </header>
+  <script> $(document).ready(function () { $("header").load("components/header.html", function () { $.getScript("components/navigation.js"); }); });
+  </script>
+  <aside class="left-bar"></aside>
+  <main class="content">
     <h1>Buchnungen</h1>
-      <p> Es freut mich das Du dich für meine Arbeit interessierst.</p>
-      <p> Im Kalender siehst Du meine freien Termine.</p>
-      <p> Alle farblich makierten Tage sind leider schon gebucht.</p>
-      <p> Hier kannst Du Kontakt zu mir aufnehmen.</p>
-      <p> Mir ist es wichtig das wir uns persönlich Kennenlernen.</p>
-      <p> Daher rechne bitte damit das wir mehrere Termine gemeinsam ausmachen.</p>
-      <p> Telefonnummer: 00000 E-Mail: beispiel@foto.de </p>
-    
-  <div id="calendar-container"></div>
+    <section class="text-image-block">
+      <div id="calendar-container"></div>
+      <div class="text">
+        <p> Es freut mich das Du dich für meine Arbeit interessierst.
+          Im Kalender siehst Du meine freien Termine.
+          Alle farblich makierten Tage sind leider schon gebucht.
+          Hier kannst Du Kontakt zu mir aufnehmen.
+          Mir ist es wichtig das wir uns persönlich Kennenlernen.
+          Daher rechne bitte damit das wir mehrere Termine gemeinsam ausmachen.
+        </p>
+        <p> Telefonnummer: 00000 E-Mail: beispiel@foto.de </p>
+      </div>
+    </section>
 
+  </main>
 
-
-    </main>
-
-    <footer>
-       <aside class="right-bar"></aside>
-       <a href="uebermich.html">Impressum</a>
-    </footer>
-     <script>$("#calendar-container").load("components/kalender.html", function () {
-  $.getScript("components/calender.js", function () {
-    initCalendar();
-  });
-});</script>
+  <footer>
+    <aside class="right-bar"></aside>
+    <a href="uebermich.html">Impressum</a>
+  </footer>
+  <script>$("#calendar-container").load("components/kalender.html", function () {
+      $.getScript("components/calender.js", function () {
+        initCalendar();
+      });
+    });
+  </script>
 </body>
+
 </html>
