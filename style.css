@@ -1,10 +1,23 @@
+:root {
+  --bg-light: #f6f3f3;
+  --text-dark: #4A4A4A;
+  --accent: #49856E;
+  --font-base: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  --highlight: #FFD700;
+  --bg-dark: #6E6E6E;
+  --spacing-s: 0.5rem;
+  --spacing-m: 1rem;
+  --spacing-l: 2rem;
+}
+
 body {
-  background-color: #f6f3f3;
-  font-family: Tahoma, Verdana;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  font-family: var(--font-base);
 }
 
 header {
-  padding: 20px;
+  padding: var(--spacing-m);
   text-align: center;
 }
 
@@ -14,59 +27,92 @@ header {
 }
 
 h1 {
-  color: #4A4A4A;
-  font-family: 'Segoe UI', Tahoma, Verdana;
+  color: var(--text-dark);
+  font-family: var(--font-base);
 }
 
 h2 {
-  color: #49856E;
+  color: var(--accent);
 }
 
 
-footer {
-  padding: 20px;
-  text-align: center;
-}
 
 a:focus,
 button:focus,
 input:focus {
-  outline: 2px solid #49856E;
+  outline: 2px solid var(--accent);
   outline-offset: 2px;
 }
 
 .calendar {
   width: 100%;
   border-collapse: collapse;
-  background-color: #f6f3f3;
-  color: #4A4A4A;
-  border: 2px solid #49856E;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  border: 2px solid var(--accent);
   border-radius: 5px;
-  padding: 1rem;
+  padding: var(--spacing-m);
   max-width: 280px;
   margin: auto;
 }
 
 .calendar th,
 .calendar td {
-  border: 1px solid #49856E;
-  padding: 0.5rem;
+  border:1px solid var(--accent);
+  padding: var(--spacing-s);
   text-align: center;
   border-radius: 4px;
 }
 
 .calendar th {
-  background-color: #6E6E6E;
-  color: #FFD700;
+  background-color: var(--bg-dark);
+  color: var(--highlight);
   font-weight: bold;
 }
 
 .booked {
-  background-color: #FFD700;
-  color: #6E6E6E;
+  background-color: var(--highlight);
+  color: var(--bg-dark);
   font-weight: bold;
-  box-shadow: 0 0 0 2px #4A4A4A;
+  box-shadow: 0 0 0 2px var(--text-dark);
   border-radius: 2px;
+}
+
+
+.bildformat {
+  height: 250px;
+  width: auto;
+}
+
+.quadrat {
+  aspect-ratio: 2/2;
+}
+
+.hoch {
+  aspect-ratio: 2/3;
+}
+
+.quer {
+  aspect-ratio: 3/2;
+}
+
+.navi a {
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: color 0.3s ease;
+}
+
+footer {
+  padding: var(--spacing-m);
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: var(--spacing-m);
+  transition: color 0.3s ease;
 }
 
 /* Desktop*/
@@ -75,29 +121,25 @@ input:focus {
   .navi ul {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap:  var(--spacing-l);
     list-style: none;
-    padding: 1rem 0;
+    padding: var(--spacing-m) 0;
     margin: 0;
-    border-bottom: 2px solid #2E2E2E;
+    border-bottom: 2px solid var(--text-dark);
   }
 
   .navi a {
-    text-decoration: none;
-    color: #4A4A4A;
-    font-weight: 500;
-    font-size: 1.1rem;
-    padding: 0.5rem 1rem;
-    border: 2px solid #4A4A4A;
-    border-radius: 6px;
-    transition: color 0.3s ease;
+    color: var(--text-dark);
+    font-size: var(--spacing-m);
+    padding: var(--spacing-s) var(--spacing-m);
+    border: 2px solid var(--text-dark);
   }
 
   .navi a.active {
-    color: #f6f3f3;
-    border-bottom: 2px solid #49856E;
-    border-color: #49856E;
-    background-color: #49856E;
+    color: var(--bg-light);
+    border-bottom: 2px solid var(--accent);
+    border-color: var(--accent);
+    background-color: var(--accent);
     ;
   }
 
@@ -108,23 +150,6 @@ input:focus {
 
   }
 
-  .quadrat {
-    aspect-ratio: 2/2;
-    height: 250px;
-    width: auto;
-  }
-
-  .hoch {
-    aspect-ratio: 2/3;
-    height: 250px;
-    width: auto;
-  }
-
-  .quer {
-    aspect-ratio: 3/2;
-    height: auto;
-    width: 250px;
-  }
 
 
 
@@ -132,11 +157,10 @@ input:focus {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 2rem;
+    gap:  var(--spacing-l);
     max-width: 1000px;
     margin: 0 auto;
-    padding: 2rem;
-
+    padding: var(--spacing-l);
   }
 
   .text-image-block.reverse {
@@ -159,7 +183,7 @@ input:focus {
 
 
   .left-bar {
-    background-color: #49856E;
+    background-color: var(--accent);
     width: 80px;
     height: 100vh;
     transition: all 0.1s ease;
@@ -169,7 +193,7 @@ input:focus {
   }
 
   .right-bar {
-    background-color: #49856E;
+    background-color: var(--accent);
     width: 80px;
     height: 100vh;
     transition: all 0.1s ease;
@@ -179,11 +203,7 @@ input:focus {
   }
 
   footer a {
-    text-decoration: none;
-    font-weight: normal;
-    font-size: 1rem;
-    color: #4A4A4A;
-    transition: color 0.3s ease;
+    color: var(--text-dark);
   }
 }
 
@@ -192,8 +212,8 @@ input:focus {
   .navi {
     width: 50px;
     height: 50px;
-    border: 5px solid #49856E;
-    background-color: #4A4A4A;
+    border: 5px solid var(--accent);
+    background-color: var(--text-dark);
     overflow: hidden;
     border-radius: 6px;
     transition: all 0.3s ease;
@@ -203,21 +223,21 @@ input:focus {
   .navi:hover {
     width: 200px;
     height: auto;
-    padding: 1rem;
+    padding: var(--spacing-m);
   }
 
   .navi ul {
     flex-direction: column;
     opacity: 0;
     transition: opacity 0.3s ease;
-    border-bottom: 0px solid #2E2E2E;
+    border-bottom: 0px solid var(--text-dark);
   }
 
   .navi:hover,
   .navi:focus-within {
     width: 200px;
     height: auto;
-    padding: 1rem;
+    padding: var(--spacing-m);
   }
 
   .navi:hover ul,
@@ -226,11 +246,11 @@ input:focus {
   }
 
   .navi li {
-    margin: 0.5rem 0;
+    margin: var(--spacing-s) 0;
   }
 
   .navi a {
-    color: white;
+    color: var(--bg-light);
     text-decoration: none;
     font-weight: bold;
   }
@@ -240,39 +260,19 @@ input:focus {
 
   }
 
-  .quadrat {
-    aspect-ratio: 2/2;
-    height: 250px;
-    width: auto;
-  }
-
-  .hoch {
-    aspect-ratio: 2/3;
-    height: 250px;
-    width: auto;
-  }
-
-  .quer {
-    aspect-ratio: 3/2;
-    height: auto;
-    width: 250px;
-  }
-
-
-
   .text-image-block {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 1rem;
+    padding: var(--spacing-m);
   }
 
   .text-image-block .text p {
     max-width: 80%;
-    padding: 0 1rem;
-    font-size: 1rem;
+    padding: 0 var(--spacing-m);
+    font-size: var(--spacing-m);
     line-height: 1.4;
   }
 
@@ -280,15 +280,15 @@ input:focus {
     max-width: 50%;
     height: auto;
     max-height: 250px;
-    margin-bottom: 1rem;
+    margin-bottom: var(--spacing-m);
   }
 
   .left-bar {
-    background-color: #49856E;
+    background-color: var(--accent);
     transition: all 0.1s ease;
     position: relative;
     width: 100%;
-    height: 20px;
+    height: var(--spacing-m);
     left: auto;
     top: auto;
     margin-top: -2px;
@@ -299,19 +299,14 @@ input:focus {
   }
 
   footer {
-    background-color: #49856E;
-    color: #f6f3f3;
-    padding: 20px;
-    text-align: center;
+    background-color: var(--accent);
+    color: var(--bg-light);
     position: relative;
   }
 
   footer a {
-    text-decoration: none;
-    font-weight: normal;
-    font-size: 1rem;
-    color: #f6f3f3;
-    transition: color 0.3s ease;
+    color: var(--bg-light);
+    ;
 
   }
 }
@@ -325,25 +320,21 @@ input:focus {
     list-style: none;
     padding: 0.3rem 0.8rem;
     margin: 0;
-    border-bottom: 2px solid #2E2E2E;
+    border-bottom: 2px solid var(--text-dark);
   }
 
   .navi a {
-    text-decoration: none;
-    color: #4A4A4A;
-    font-weight: 500;
+    color: var(--text-dark);
     font-size: 0.9rem;
     padding: 0.3rem 0.8rem;
-    border: 1px solid #4A4A4A;
-    border-radius: 4px;
-    transition: color 0.3s ease;
+    border: 1px solid var(--text-dark);
   }
 
   .navi a.active {
-    color: #f6f3f3;
-    border-bottom: 2px solid #49856E;
-    border-color: #49856E;
-    background-color: #49856E;
+    color: var(--bg-light);
+    border-bottom: 2px solid var(--accent);
+    border-color: var(--accent);
+    background-color: var(--accent);
     ;
   }
 
@@ -351,23 +342,7 @@ input:focus {
     text-align: center;
   }
 
-  .quadrat {
-    aspect-ratio: 2/2;
-    height: 250px;
-    width: auto;
-  }
 
-  .hoch {
-    aspect-ratio: 2/3;
-    height: 250px;
-    width: auto;
-  }
-
-  .quer {
-    aspect-ratio: 3/2;
-    height: auto;
-    width: 250px;
-  }
 
   .left-bar,
   .right-bar {
@@ -375,19 +350,13 @@ input:focus {
   }
 
   footer {
-    background-color: #49856E;
-    color: #f6f3f3;
-    padding: 20px;
-    text-align: center;
+    background-color: var(--accent);
+    color: var(--bg-light);
     position: relative;
   }
 
   footer a {
-    text-decoration: none;
-    font-weight: normal;
-    font-size: 1rem;
-    color: #f6f3f3;
-    transition: color 0.3s ease;
+    color: var(--bg-light);
 
   }
 }
