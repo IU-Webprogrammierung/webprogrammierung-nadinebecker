@@ -16,6 +16,7 @@
   --spacing-m: 1rem;
   --spacing-l: 2rem;
 }
+
 .dark-mode {
   --bg-light: #1e1e1e;
   --bg-dark: #121212;
@@ -24,18 +25,42 @@
   --highlight: #FFD700;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: var(--bg-light);
   color: var(--text-dark);
   font-family: var(--font-base);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
 }
 
 header,
 footer {
-  padding: var(--spacing-l);
+  padding: var(--spacing-m);
   text-align: center;
 }
 
+
+header,
+.left-bar,
+.navi {
+  flex-shrink: 0; /* verhindert, dass diese schrumpfen */
+  position: relative; /* wichtig für stacking */
+  z-index: 10;
+}
+
+main.content {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: var(--spacing-m);
+}
 
 .logo {
   width: 150px;
@@ -219,6 +244,10 @@ footer a:hover {
     right: 0;
   }
 
+  .seitenname {
+    display: none;
+  }
+
   footer a {
     color: var(--text-dark);
   }
@@ -300,7 +329,7 @@ footer a:hover {
     transition: all 0.1s ease;
     position: relative;
     width: 100%;
-    height: var(--spacing-m);
+    height: var(--spacing-l);
     left: auto;
     top: auto;
     margin-top: -2px;
@@ -308,6 +337,14 @@ footer a:hover {
 
   .right-bar {
     display: none;
+  }
+
+  .seitenname {
+    color: var(--bg-light);
+    font-size: var(--font-size-small);
+    font-weight: bold;
+    text-align: center;
+    padding: var(--spacing-xs);
   }
 
   footer {
@@ -359,6 +396,10 @@ footer a:hover {
     display: none;
   }
 
+  .seitenname {
+    display: none;
+  }
+
   footer {
     background-color: var(--accent);
     color: var(--bg-light);
@@ -370,4 +411,3 @@ footer a:hover {
 
   }
 }
-
