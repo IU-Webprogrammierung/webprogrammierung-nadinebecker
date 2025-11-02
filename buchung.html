@@ -39,7 +39,11 @@
   <footer>
     <aside class="right-bar"></aside>
     <a href="uebermich.html">Impressum</a>
+    <br>
+    <button id="toggle-dark">Dark Mode</button>
+    <script src="components/darkmode.js"></script>
   </footer>
+
   <script>$("#calendar-container").load("components/kalender.html", function () {
       $.getScript("components/calender.js", function () {
         initCalendar();

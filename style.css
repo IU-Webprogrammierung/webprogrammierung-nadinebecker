@@ -16,6 +16,13 @@
   --spacing-m: 1rem;
   --spacing-l: 2rem;
 }
+.dark-mode {
+  --bg-light: #1e1e1e;
+  --bg-dark: #121212;
+  --text-dark: #f0f0f0;
+  --accent: #49856E;
+  --highlight: #FFD700;
+}
 
 body {
   background-color: var(--bg-light);
@@ -363,3 +370,4 @@ footer a:hover {
 
   }
 }
+
