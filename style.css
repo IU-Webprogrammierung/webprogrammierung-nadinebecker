@@ -179,6 +179,57 @@ footer a:hover {
   transition: all 0.3s ease;
 }
 
+.slideshow {
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: fade 12s infinite;
+}
+
+.slide:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.slide:nth-child(2) {
+  animation-delay: 4s;
+}
+
+.slide:nth-child(3) {
+  animation-delay: 8s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  8% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  33% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
 /* Desktop*/
 
 @media (min-width: 1080px) {
@@ -236,11 +287,18 @@ footer a:hover {
   }
 
   .text-image-block img {
-    flex: 1;
-    object-fit: cover;
+    height: 250px;
+    width: auto;
     border-radius: 8px;
-    height: auto;
-    max-width: 25%;
+    object-fit: cover;
+  }
+
+  .text-image-block .slideshow {
+    width: auto;
+    height: 250px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
   }
 
   .left-bar,
