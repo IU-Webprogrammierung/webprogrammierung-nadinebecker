@@ -1,3 +1,6 @@
+$(document).ready(function () {
+  if ($("#calendar-container").length) {
+    $("#calendar-container").load("components/kalender.html", function () {
 function initCalendar() {
   const monthYear = document.getElementById("month-year");
   const calendarBody = document.getElementById("calendar-body");
@@ -56,3 +59,9 @@ function initCalendar() {
 
   renderCalendar(currentDate);
 }
+ if (typeof initCalendar === "function") {
+        initCalendar();
+      }
+    });
+  }
+});
