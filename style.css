@@ -139,6 +139,7 @@ input:focus {
   height: 250px;
   width: auto;
 
+}
 
 .quadrat {
   aspect-ratio: 2/2;
@@ -150,7 +151,6 @@ input:focus {
 
 .quer {
   aspect-ratio: 3/2;
-}
 }
 
 .navi a {
@@ -198,6 +198,7 @@ footer a:hover {
   opacity: 0;
   animation: fade 12s infinite;
 }
+}
 
 .slide:nth-child(1) {
   animation-delay: 0s;
@@ -232,7 +233,7 @@ footer a:hover {
     opacity: 0;
   }
 }
-}
+
 
 /* Desktop*/
 
