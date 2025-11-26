@@ -234,6 +234,39 @@ footer a:hover {
   }
 }
 
+.leistungen {
+  background-color: var(--bg-light);
+  border: 2px solid var(--accent);
+  border-radius: 8px;
+  padding: var(--spacing-m);
+  margin: var(--spacing-l) auto;
+  max-width: 800px;
+  text-align: left;
+
+  h2 {
+    color: var(--accent);
+    margin-bottom: var(--spacing-s);
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: var(--spacing-s);
+      padding-left: 1.5rem;
+      position: relative;
+
+      &::before {
+        content: "✔";
+        color: var(--accent);
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+}
+
 
 /* Desktop*/
 
@@ -480,7 +513,7 @@ footer a:hover {
   .content {
     text-align: center;
   }
-  
+
 .text-image-block .slideshow {
     width: 100%;
     max-width: 400px;
