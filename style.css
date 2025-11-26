@@ -480,6 +480,15 @@ footer a:hover {
   .content {
     text-align: center;
   }
+  
+.text-image-block .slideshow {
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
 
   .left-bar,
   .right-bar {
