@@ -45,7 +45,17 @@ $(document).ready(function () {
             const key = `${year}-${String(month + 1).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
             if (bookedDates[key]) {
               cell.classList.add("booked");
+
+            } else {
+              //  Interaktion und Anfrage senden
+              cell.addEventListener("click", () => {
+                const form = document.getElementById("booking-form");
+                form.classList.add("visible"); // Formular sichtbar machen
+                document.getElementById("date").value = key; // Datum ins Formular schreiben
+              });
             }
+
+            row.appendChild(cell);
 
             row.appendChild(cell);
 
