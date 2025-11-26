@@ -2,7 +2,7 @@
   --bg-light: #f6f3f3;
   --bg-dark: #6E6E6E;
   --text-dark: #4A4A4A;
-  --accent: #49856E;
+  --accent: #2B5041;
   --highlight: #FFD700;
 
   --font-base: 'Segoe UI', Tahoma, Verdana, sans-serif;
@@ -21,7 +21,7 @@
   --bg-light: #1e1e1e;
   --bg-dark: #121212;
   --text-dark: #f0f0f0;
-  --accent: #49856E;
+  --accent: #67AC92;
   --highlight: #FFD700;
 }
 
@@ -187,7 +187,7 @@ footer a:hover {
 .slideshow {
   position: relative;
   overflow: hidden;
-
+}
 .slide {
   position: absolute;
   top: 0;
@@ -198,7 +198,7 @@ footer a:hover {
   opacity: 0;
   animation: fade 12s infinite;
 }
-}
+
 
 .slide:nth-child(1) {
   animation-delay: 0s;
