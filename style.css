@@ -343,21 +343,21 @@ input {
     border-bottom: 2px solid var(--text-dark);
 
 
-  & a {
-    color: var(--text-dark);
-    font-size: var(--font-size-large);
-    padding: var(--spacing-s) var(--spacing-m);
-    border: 2px solid var(--text-dark);
-  
+    & a {
+      color: var(--text-dark);
+      font-size: var(--font-size-large);
+      padding: var(--spacing-s) var(--spacing-m);
+      border: 2px solid var(--text-dark);
 
-  & .active {
-    color: var(--bg-light);
-    border-bottom: 2px solid var(--accent);
-    background-color: var(--accent);
-    ;
+
+      & .active {
+        color: var(--bg-light);
+        border-bottom: 2px solid var(--accent);
+        background-color: var(--accent);
+        ;
+      }
+    }
   }
-  }
-}
 
   .content {
     text-align: center;
@@ -441,37 +441,37 @@ input {
     border-radius: 6px;
     transition: all 0.3s ease;
     position: relative;
-  
 
-  &:hover,
-  &:focus-within {
-    width: 200px;
-    height: auto;
-    padding: var(--spacing-m);
-  }
 
-  & ul {
-    flex-direction: column;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    border-bottom: none;
-  }
-  
-  &:hover ul,
-  &:focus-within ul {
-    opacity: 1;
-  }
-  
+    &:hover,
+    &:focus-within {
+      width: 200px;
+      height: auto;
+      padding: var(--spacing-m);
+    }
 
-  & li {
-    margin: var(--spacing-s) 0;
-  }
+    & ul {
+      flex-direction: column;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      border-bottom: none;
+    }
 
-  & a {
-    color: var(--bg-light);
-    text-decoration: none;
-    font-weight: bold;
-  }
+    &:hover ul,
+    &:focus-within ul {
+      opacity: 1;
+    }
+
+
+    & li {
+      margin: var(--spacing-s) 0;
+    }
+
+    & a {
+      color: var(--bg-light);
+      text-decoration: none;
+      font-weight: bold;
+    }
   }
 
   .content {
@@ -479,23 +479,25 @@ input {
 
   }
 
-  .text-image-block > * {
-  max-width: 50%;   
-  margin: var(--spacing-m) auto;
-}
-.text-image-block img,
-.text-image-block .slideshow {
-  width: auto;  
- height: auto;
-  max-height: 250px;
-  margin: 0 auto var(--spacing-m);
-  border-radius: 3px;
-}
-.slideshow .slide {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;  
-}
+  .text-image-block>* {
+    max-width: 50%;
+    margin: var(--spacing-m) auto;
+  }
+
+  .text-image-block img,
+  .text-image-block .slideshow {
+    width: auto;
+    height: auto;
+    max-height: 250px;
+    margin: 0 auto var(--spacing-m);
+    border-radius: 3px;
+  }
+
+  .slideshow .slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
 
   .left-bar {
@@ -527,12 +529,12 @@ input {
     position: relative;
     padding: var(--spacing-l);
     min-height: 80px;
-  
 
-  & a {
-    color: var(--bg-light);
+
+    & a {
+      color: var(--bg-light);
+    }
   }
-}
 }
 
 /* Tablet*/
@@ -547,43 +549,47 @@ input {
     border-bottom: 2px solid var(--text-dark);
 
 
-  & a {
-    color: var(--text-dark);
-    font-size: var(--font-size-small);
-    padding: var(--spacing-xs) var(--spacing-md);
-    border: 1px solid var(--text-dark);
+    & a {
+      color: var(--text-dark);
+      font-size: var(--font-size-small);
+      padding: var(--spacing-xs) var(--spacing-md);
+      border: 1px solid var(--text-dark);
+    }
+
+    & a.active {
+      color: var(--bg-light);
+      border-bottom: 2px solid var(--accent);
+      background-color: var(--accent);
+      ;
+    }
   }
 
-  & a.active {
-    color: var(--bg-light);
-    border-bottom: 2px solid var(--accent);
-    background-color: var(--accent);
-    ;
-  }
-}
   .content {
     text-align: center;
   }
-.text-image-block > * {
-  max-width: 50%;   
-  margin: var(--spacing-m) auto;
-}
-.text-image-block img,
-.text-image-block .slideshow {
-  width: auto;  
-  height: auto;
-  max-height: 250px;
-  margin: 0 auto var(--spacing-m);
-  border-radius: 3px;
-}
-.slideshow .slide {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;  
-}
+
+  .text-image-block>* {
+    max-width: 50%;
+    margin: var(--spacing-m) auto;
+  }
+
+  .text-image-block img,
+  .text-image-block .slideshow {
+    width: auto;
+    height: auto;
+    max-height: 250px;
+    margin: 0 auto var(--spacing-m);
+    border-radius: 3px;
+  }
+
+  .slideshow .slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
 
-  
+
   .left-bar,
   .right-bar {
     display: none;
@@ -597,11 +603,11 @@ input {
     background-color: var(--accent);
     color: var(--bg-light);
     position: relative;
-  
 
-  & a {
-    color: var(--bg-light);
 
+    & a {
+      color: var(--bg-light);
+
+    }
   }
-}
 }
