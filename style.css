@@ -341,21 +341,23 @@ input {
     padding: var(--spacing-m) 0;
     margin: 0;
     border-bottom: 2px solid var(--text-dark);
-  }
 
-  .navi a {
+
+  & a {
     color: var(--text-dark);
     font-size: var(--font-size-large);
     padding: var(--spacing-s) var(--spacing-m);
     border: 2px solid var(--text-dark);
-  }
+  
 
-  .navi a.active {
+  & .active {
     color: var(--bg-light);
     border-bottom: 2px solid var(--accent);
     background-color: var(--accent);
     ;
   }
+  }
+}
 
   .content {
     text-align: center;
@@ -439,36 +441,37 @@ input {
     border-radius: 6px;
     transition: all 0.3s ease;
     position: relative;
-  }
+  
 
-  .navi:hover,
-  .navi:focus-within {
+  &:hover,
+  &:focus-within {
     width: 200px;
     height: auto;
     padding: var(--spacing-m);
   }
 
-  .navi ul {
+  & ul {
     flex-direction: column;
     opacity: 0;
     transition: opacity 0.3s ease;
     border-bottom: none;
   }
-
-  .navi:hover ul,
-  .navi:focus-within ul {
+  
+  &:hover ul,
+  &:focus-within ul {
     opacity: 1;
   }
+  
 
-
-  .navi li {
+  & li {
     margin: var(--spacing-s) 0;
   }
 
-  .navi a {
+  & a {
     color: var(--bg-light);
     text-decoration: none;
     font-weight: bold;
+  }
   }
 
   .content {
@@ -538,11 +541,12 @@ input {
     position: relative;
     padding: var(--spacing-l);
     min-height: 80px;
-  }
+  
 
-  footer a {
+  & a {
     color: var(--bg-light);
   }
+}
 }
 
 /* Tablet*/
@@ -556,21 +560,21 @@ input {
     margin: 0;
     border-bottom: 2px solid var(--text-dark);
 
-  }
 
-  .navi a {
+  & a {
     color: var(--text-dark);
     font-size: var(--font-size-small);
     padding: var(--spacing-xs) var(--spacing-md);
     border: 1px solid var(--text-dark);
   }
 
-  .navi a.active {
+  & a.active {
     color: var(--bg-light);
     border-bottom: 2px solid var(--accent);
     background-color: var(--accent);
     ;
   }
+}
 
   .content {
     text-align: center;
@@ -622,10 +626,11 @@ input {
     background-color: var(--accent);
     color: var(--bg-light);
     position: relative;
-  }
+  
 
-  footer a {
+  & a {
     color: var(--bg-light);
 
   }
+}
 }
