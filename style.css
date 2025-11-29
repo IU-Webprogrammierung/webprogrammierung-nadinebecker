@@ -1,6 +1,6 @@
 :root {
   --bg-light: #f6f3f3;
-  --bg-dark: #6E6E6E;
+  --bg-dark: #424242;
   --text-dark: #4A4A4A;
   --accent: #2B5041;
   --highlight: #FFD700;
@@ -286,7 +286,8 @@ input {
   padding: var(--spacing-m);
   margin-top: var(--spacing-m);
   max-width: 400px;
-  transition: opacity 0.3s ease; /* für sanftes Ein-/Ausblenden */
+  transition: opacity 0.3s ease;
+  /* für sanftes Ein-/Ausblenden */
 
   &.hidden {
     opacity: 0;
