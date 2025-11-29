@@ -8,6 +8,7 @@
   --font-base: 'Segoe UI', Tahoma, Verdana, sans-serif;
   --font-size-base: 1rem;
   --font-size-small: 0.9rem;
+  --font-size-supersmall: 0.7rem;
   --font-size-large: 1.1rem;
 
   --spacing-xs: 0.3rem;
@@ -519,13 +520,13 @@ input {
   }
 
   .calendar {
-    width: 95%;
+    width: 80%;
     max-width: 800px;
-    font-size: var(--font-size-small);
+    font-size: var(--font-size-supersmall);
 
     & th,
     & td {
-      padding: 4px;
+      padding: 3px;
 
     }
   }
