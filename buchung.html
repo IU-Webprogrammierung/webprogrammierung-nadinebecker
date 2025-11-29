@@ -8,6 +8,7 @@
     crossorigin="anonymous"></script>
   <script src="components/header.js"></script>
   <script src="components/calender.js"></script>
+    <script src="components/booking.js"></script>
 
   <title>NB Fotografie - Home</title>
   <link rel="stylesheet" href="style.css">
@@ -24,11 +25,12 @@
     <h1>Buchungen</h1>
     <section class="text-image-block">
       <div id="calendar-container"></div>
+      <button id="open-booking">Termin <br>anfragen</button>
 <div id="booking-form" class="hidden">
   <h3>Termin anfragen</h3>
   <form>
     <label for="date">Datum:</label>
-    <input type="text" id="date" name="date" readonly>
+   <input type="date" id="date" name="date" required>
 
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" required>
@@ -49,7 +51,7 @@
           In meinem Kalender findest du eine Übersicht über meine verfügbaren Termine.
           Alle farblich markierten Tage sind bereits vergeben,
           aber vielleicht finden wir gemeinsam noch ein passendes Datum für dein Shooting oder Event.
-        <br>  Dazu einfach den gewünschten Tag anklicken und eine Anfrage an mich senden.
+        <br>  Dazu einfach im Kalender einen freien Termin finden und eine Anfrage losschicken.
         </p>
         <p>Über das Kontaktformular kannst du ganz unkompliziert mit mir in Verbindung treten.
           Mir ist es besonders wichtig, dass wir uns vorab persönlich kennenlernen,

@@ -280,16 +280,24 @@ input {
 
 
 #booking-form {
-  display: none;
   background-color: var(--bg-light);
   border: 2px solid var(--accent);
   border-radius: 8px;
   padding: var(--spacing-m);
   margin-top: var(--spacing-m);
   max-width: 400px;
+  transition: opacity 0.3s ease; /* für sanftes Ein-/Ausblenden */
+
+  &.hidden {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+  }
 
   &.visible {
-    display: block;
+    opacity: 1;
+    pointer-events: auto;
+    position: static;
   }
 
   & h3 {
