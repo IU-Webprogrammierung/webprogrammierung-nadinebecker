@@ -520,7 +520,7 @@ input {
   }
 
   .calendar {
-    width: 80%;
+    width: auto;
     max-width: 800px;
     font-size: var(--font-size-supersmall);
 
