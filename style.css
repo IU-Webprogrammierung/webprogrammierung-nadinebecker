@@ -520,14 +520,12 @@ input {
   }
 
   .calendar {
-    width: auto;
     max-width: 800px;
     font-size: var(--font-size-supersmall);
 
     & th,
     & td {
       padding: 3px;
-
     }
   }
 
